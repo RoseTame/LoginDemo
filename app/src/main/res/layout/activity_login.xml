@@ -32,13 +32,13 @@
         app:layout_constraintTop_toBottomOf="@+id/photo" />
 
     <EditText
-        android:id="@+id/tv_number"
+        android:id="@+id/et_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:ems="10"
         android:hint="输入QQ号"
-        android:inputType="phone"
+        android:inputType="number"
         android:maxLength="11"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView1"
@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
     <EditText
-        android:id="@+id/tv_password"
+        android:id="@+id/et_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="188dp"
         android:backgroundTint="@android:color/holo_green_light"
         android:text="登录"
         android:textSize="20sp"
@@ -86,10 +86,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="188dp"
         android:backgroundTint="@color/purple_200"
         android:text="退出"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_autoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="240dp"
+        android:enabled="false"
+        android:text="自动登录"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="240dp"
+        android:text="记住密码"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cb_autoLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
